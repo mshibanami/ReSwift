@@ -16,7 +16,7 @@ import SwiftUI
  reducers you can combine them by initializng a `MainReducer` with all of your reducers as an
  argument.
  */
-open class Store<State: StateType>: StoreType, BindableObject {
+open class Store<State: StateType>: StoreType, ObservableObject {
 
     public var didChange: Published<State>.Publisher {
         get {
